@@ -1,0 +1,432 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Kausain Sayyed Bootstrap Task 3</title>
+    <!-- CSS only -->
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-iYQeCzEYFbKjA/T2uDLTpkwGzCiq6soy8tYaI1GyVh/UjpbCx/TYkiZhlZB6+fzT"
+      crossorigin="anonymous"
+    />
+    <!-- JavaScript Bundle with Popper -->
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-u1OknCvxWvY5kfmNBILK2hRnQC3Pr17a+RTT6rIHI7NnikvbZlHgTPOOmMi466C8"
+      crossorigin="anonymous"
+    ></script>
+    <link rel="stylesheet" href="Bootstrap_Task3.css" />
+
+    <style>
+      .nav-pills .nav-link.active, .nav-pills .show>.nav-link {
+    background-color: white;
+}
+
+@media (max-width:501px) {
+  .table{
+    width: 171%;
+  }
+}
+#navbar{
+    background-color: #96eea8;
+}   
+
+
+    </style>
+  </head>
+  <body>
+    
+    <!-- <div class="container-fluid"> -->
+      <!-- <h2>Toggleable Pills</h2>
+      <br>
+      
+      <ul class="nav nav-pills" role="tablist">
+        <li class="nav-item">
+          <a class="nav-link active" data-bs-toggle="pill" href="#home">Home</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" data-bs-toggle="pill" href="#aboutus">About Us</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" data-bs-toggle="pill" href="#news">News</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" data-bs-toggle="pill" href="#map">Map</a>
+        </li>
+      </ul> -->
+
+      <nav class="navbar navbar-expand-lg" id="navbar">
+        <div class="container-fluid">
+            <a class="navbar-brand" href="#"><img src="iqraicons.png" height="40px" alt="" /></a>
+            <button class="navbar-toggler  " type="button" data-bs-toggle="collapse"
+                data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
+                aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon "></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav nav  me-auto mb-2 mb-lg-0 nav-pills ">
+                    <li class="nav-item ">
+                        <a class="nav-link link-primary active" data-bs-toggle="tab" href="#home">Home</a>
+                    </li>
+
+                    <li class="nav-item">
+                        <a class="nav-link link-primary " data-bs-toggle="tab" data-bs-toggle="collapse"
+                            href="#about">About</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link link-primary " data-bs-toggle="tab" data-bs-toggle="collapse"
+                            href="#news">News</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link disabled" aria-current="page" href="#">Map</a>
+                    </li>
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle link-primary" href="#" role="button"
+                            data-bs-toggle="dropdown" aria-expanded="false">
+                            Dropdown
+                        </a>
+                        <ul class="dropdown-menu">
+                            <li><a class="dropdown-item" href="#">Link</a></li>
+                            <li><a class="dropdown-item" href="#">Another Link</a></li>
+                            <li>
+                                <hr class="dropdown-divider" />
+                            </li>
+                            <li><a class="dropdown-item" href="#">Third Link</a></li>
+                        </ul>
+                    </li>
+                </ul>
+
+                <!-- Contact button -->
+
+                <form class="d-flex" role="search">
+                    <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#myModal">
+                        Contact
+                    </button>
+            </div>
+
+            <!-- The Modal -->
+            <div class="modal" id="myModal">
+                <div class="modal-dialog">
+                    <div class="modal-content">
+
+                        <!-- Modal Header -->
+                        <div class="modal-header bg-warning">
+                            <h4 class="modal-title ">Contact Us</h4>
+                            <button type="button" class="btn-close" data-bs-dismiss="modal"></button>
+                        </div>
+
+                        <!-- Modal body -->
+                        <div class="modal-body">
+                            <label for="">Name <em>*</em></label>
+                            <input class="form-control" type="text"><br>
+
+                            <label for="">Email <em>*</em></label>
+                            <input class="form-control" type="email"><br>
+
+                            <label for="">Type your message here <em>*</em></label>
+                            <textarea class="form-control" rows="3"></textarea>
+
+                        </div>
+
+                        <!-- Modal footer -->
+                        <div class="modal-footer">
+                            <button type="button" class="btn btn-primary" data-bs-dismiss="modal">Submit</button>
+                            <button type="button" class="btn btn-danger" data-bs-dismiss="modal">Cancel</button>
+                        </div>
+
+                    </div>
+                </div>
+                </form>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Navigation Text  below -->
+
+    <div class="tab-content mt-4 mb-4">
+      <div class="tab-pane container active" id="home">
+          <h3>HOME</h3>
+          <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Deleniti, eveniet!</p>
+      </div>
+      <div class="tab-pane container fade" id="about">
+          <h3>About</h3>
+          <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Culpa, corrupti. Lorem ipsum dolor sit.</p>
+      </div>
+      <div class="tab-pane container fade" id="news">
+          <h3>News</h3>
+          <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit.</p>
+      </div>
+  </div>
+
+
+    
+     <!-- Carousel code  -->
+    <div id="demo" class="carousel slide third_container" data-bs-ride="carousel">
+
+     
+      <div class="carousel-indicators">
+        <button type="button" data-bs-target="#demo" data-bs-slide-to="0" class="active"></button>
+        <button type="button" data-bs-target="#demo" data-bs-slide-to="1"></button>
+        <button type="button" data-bs-target="#demo" data-bs-slide-to="2"></button>
+      </div>
+      
+      <!-- The slideshow/carousel -->
+      <div class="carousel-inner ">
+        <div class="carousel-item active">
+          <img src="R (2).jpg" alt="" class="d-block img1" style="width:100%" style="height: 500px;" >
+        </div>
+        <div class="carousel-item">
+          <img src="R (3).jpg" alt="" class="d-block img1" style="width:100%" style="height: 500px;" >
+        </div>
+        <div class="carousel-item">
+          <img src="R (4).jpg" alt="" class="d-block img1" style="width:100%" style="height: 500px;" >
+        </div>
+      </div>
+      
+      <!-- Left and right controls/icons -->
+      <button class="carousel-control-prev" type="button" data-bs-target="#demo" data-bs-slide="prev">
+        <span class="carousel-control-prev-icon"></span>
+      </button>
+      <button class="carousel-control-next" type="button" data-bs-target="#demo" data-bs-slide="next">
+        <span class="carousel-control-next-icon"></span>
+      </button>
+    </div>
+
+    <div class="container">
+      <div class="heading">
+        <h1 class="mt-4">Rose Garden</h1>
+        <h3>Title description, Sep 8, 2022</h3>
+        <small>Some text...</small>
+      </div>
+      <div class="content">
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Obcaecati debitis odio provident possimus optio porro.</p>
+        
+        <button type="button" class="btn btn-primary mb-4" data-bs-toggle="tooltip" title="learn more!" data-bs-placement="right">
+          Know More About Me!
+        </button>
+        <script>
+          var tooltipTriggerList = [].slice.call(document.querySelectorAll('[data-bs-toggle="tooltip"]'))
+          var tooltipList = tooltipTriggerList.map(function (tooltipTriggerEl) {
+            return new bootstrap.Tooltip(tooltipTriggerEl)
+          })
+          </script>
+
+
+
+      </div>
+    </div>
+    <div class="container">
+      <div class="row ">
+        <div class="col-sm-3 border">
+          <span><h1>About Me</h1></span>
+          <span><h5>Video of me:</h5></span>
+          <iframe width="250" height="330" src="https://www.youtube.com/embed/j3_06rkrsLs" title="Iqra Technology Corporate Video" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+          <span><p>Lorem ipsum dolor sit amet. Lorem ipsum dolor sit amet.</p></span>
+          <span><h2>Some Links</h2></span>
+          <button type="button" class="btn btn-white text-muted border w-50 mb-3" data-bs-toggle="tooltip" data-bs-placement="right" title="Know more about me!">
+            learn more!
+          </button>
+          <script>
+          var tooltipTriggerList = [].slice.call(document.querySelectorAll('[data-bs-toggle="tooltip"]'))
+  var tooltipList = tooltipTriggerList.map(function (tooltipTriggerEl) {
+    return new bootstrap.Tooltip(tooltipTriggerEl)
+  })
+  </script> 
+          <ul class="nav flex-column nav-justified">
+            <li class="nav-item rounded-3 bg-primary text-white pb-3"><a class="nav-link"  href="#"></a>Active</li>
+            <li class="nav-item"><a class="nav-link bg-white text-dark"  href="#"></a>Link1</li>
+            <li class="nav-item"><a class="nav-link bg-white text-dark"  href="#"></a>Link2</li>
+            <li class="nav-item"><a class="nav-link disabled bg-white text-dark"  href="#"></a>Disabled</li>
+          </ul>
+
+          
+        </div>
+        <div class="col-sm-8 Eram mx-3">
+          <div class="container-fluid" data-bs-spy="scroll" data-bs-target=".navba2r" data-bs-offset="50">
+            <nav class="navba2r navbar-expand-sm
+ bg-dark navbar-dark nav_color">
+              <div class="container-fluid">
+                <ul class="navbar-nav">
+                  <li class="nav-item mx-3">
+                    <a class="nav-link" href="#section1.1">HTML</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" href="#section2.2">Why HTML?</a>
+                  </li>
+                </ul>
+              </div>
+            </nav>
+            
+            <div id="section1.1" class="container text-dark container__section" style="padding:50px 10px; bg-color:blue;">
+              <h1>HTML</h1>
+            <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Fuga maiores officia aliquam dolorem? Ipsam laudantium temporibus, sapiente quia dicta, fugit aspernatur, accusantium at cumque iusto labore consectetur. Magni, natus debitis! Lorem ipsum dolor sit amet consectetur adipisicing elit. Asperiores, fuga velit minima distinctio id perspiciatis placeat debitis quisquam animi praesentium nobis doloribus natus aliquid autem ullam! Fugiat dignissimos recusandae fugit perferendis atque ut tempora, saepe veritatis repellat? Commodi consequatur facilis eos omnis pariatur nostrum error, ipsa magnam, rerum mollitia dignissimos.</p>  
+            </div>
+            
+            <div id="section2.2" class="container-fluid container_section2" style="padding:50px 10px;">
+              <div class="container rounded-3 bg-blue pb-4 pt-4">
+                <h1>Why is HTML?</h1>
+              <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Soluta, magni assumenda eum doloribus suscipit voluptatem nisi? Distinctio quisquam ipsam incidunt voluptate similique neque vitae ratione nemo maiores, quis eaque facere cumque maxime necessitatibus aperiam mollitia magni. Architecto ex dicta pariatur itaque unde est aut dolores consectetur voluptatibus tempora eligendi libero veniam nemo consequuntur cumque totam, voluptas, perspiciatis nesciunt eos iste omnis, doloremque asperiores dolor. Enim ad necessitatibus voluptatibus quisquam quam at quia harum aut dolorum optio, quidem <br>pariatur odit natus nobis molestias! Eius, architecto placeat consequuntur veritatis error inventore impedit, est similique cumque provident sapiente rem asperiores quibusdam autem earum dolor obcaecati totam eveniet sit mollitia reprehenderit quis in? Illo neque autem voluptates obcaecati quod fuga eos dolorum accusantium laboriosam iure veniam molestias ut sed, distinctio nesciunt dignissimos, quis nam, iusto explicabo beatae voluptatibus tenetur quae amet. Laudantium distinctio assumenda deserunt quibusdam culpa ad illo? Voluptates praesentium quibusdam mollitia velit.</p>
+              </div>
+            </div>
+            
+          </div>
+        </div>
+      </div>
+    </div>
+    </div>
+
+    <div class="datatable mt-4 mb-4 pt-4">
+      <div class="container">            
+        <table class="table table-hover">
+          <thead>
+            <tr>
+              <th>#</th>
+              <th>Project Name</th>
+              <th>Team Members</th>
+              <th>Project Process</th>
+              <th>Status</th>
+              <th>#Edit</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td>#</td>
+              <td class="naam">Pesamakini Backend UI <br> <small>Created 01.01.2005</small></td>
+              <td><i class="fa-solid fa-user"></i><i class="fa-solid fa-user"></i><i class="fa-solid fa-user"></i></td>
+              <td><div class="progress">
+                <div class="progress-bar progress-bar-success bg-success" role="progressbar" aria-valuenow="40"
+                aria-valuemin="0" aria-valuemax="100" style="width:60%">
+                </div>
+              </div>
+            60% completed</td><td><button type="button" class="btn btn-success">Success</button></td>
+          <td><button type="button" class="btn btn-primary" style="width: 60px;">View</button>
+            <button type="button" class="btn btn-dark" style="width: 60px;">Edit</button>
+            <button type="button" class="btn btn-danger" style="width: 70px;">Delete</button></td>
+            </tr>
+            <tr>
+              <td>#</td>
+              <td class="naam">Pesamakini Backend UI <br> <small>Created 01.01.2005</small></td>
+                <td><i class="fa-solid fa-user"></i><i class="fa-solid fa-user"></i><i class="fa-solid fa-user"></i><i class="fa-solid fa-user"></i></td>
+                <td><div class="progress"> 
+                  <div class="progress-bar progress-bar-success bg-success" role="progressbar" aria-valuenow="40"
+                  aria-valuemin="0" aria-valuemax="100" style="width:20%">
+                  </div>
+                  </div>
+                  20% completed
+                </td>
+                <td><button type="button" class="btn btn-success">Success</button></td>
+          <td><button type="button" class="btn btn-primary" style="width: 60px;">View</button>
+            <button type="button" class="btn btn-dark" style="width: 60px;">Edit</button>
+            <button type="button" class="btn btn-danger" style="width: 70px;">Delete</button></td>
+            <tr>
+              <td>#</td>
+                <td class="naam">Pesamakini Backend UI <br> <small>Created 01.01.2005</small></td>
+                <td><i class="fa-solid fa-user"></i><i class="fa-solid fa-user"></i></td>
+                <td><div class="progress">
+                  <div class="progress-bar progress-bar-success bg-success" role="progressbar" aria-valuenow="40"
+                  aria-valuemin="0" aria-valuemax="100" style="width:57%">
+                  </div>
+                  </div>
+                  57% completed
+                  </td>
+                
+              <td><button type="button" class="btn btn-success">Success</button></td>
+          <td><button type="button" class="btn btn-primary" style="width: 60px;">View</button>
+            <button type="button" class="btn btn-dark" style="width: 60px;">Edit</button>
+            <button type="button" class="btn btn-danger" style="width: 70px;">Delete</button></td>
+            </tr>
+            <tr>
+              <td>#</td>
+                <td class="naam">Pesamakini Backend UI <br> <small>Created 01.01.2005</small></td>
+                <td><i class="fa-solid fa-user"></i><i class="fa-solid fa-user"></i><i class="fa-solid fa-user"></i><i class="fa-solid fa-user"></i><i class="fa-solid fa-user"></i><i class="fa-solid fa-user"></i><i class="fa-solid fa-user"></i></td>
+                <td><div class="progress">
+                  <div class="progress-bar progress-bar-success bg-success" role="progressbar" aria-valuenow="40"
+                  aria-valuemin="0" aria-valuemax="100" style="width:90%">
+                  </div>
+                  </div>
+                  90% completed
+                  </td>
+                <td><button type="button" class="btn btn-success">Success</button></td>
+          <td><button type="button" class="btn btn-primary" style="width: 60px;">View</button>
+            <button type="button" class="btn btn-dark" style="width: 60px;">Edit</button>
+            <button type="button" class="btn btn-danger" style="width: 70px;">Delete</button></td>
+            </tr>
+            <tr>
+              <td>#</td>
+               <td class="naam">Pesamakini Backend UI <br> <small>Created 01.01.2005</small></td>
+                <td><i class="fa-solid fa-user"></i><i class="fa-solid fa-user"></i></td>
+                <td><div class="progress">
+                  <div class="progress-bar progress-bar-success bg-success" role="progressbar" aria-valuenow="40"
+                  aria-valuemin="0" aria-valuemax="100" style="width:50%">
+                  </div>
+                  </div>
+                  50% completed
+                  </td><td><button type="button" class="btn btn-success">Success</button></td>
+          <td><button type="button" class="btn btn-primary" style="width: 60px;">View</button>
+            <button type="button" class="btn btn-dark" style="width: 60px;">Edit</button>
+            <button type="button" class="btn btn-danger" style="width: 70px;">Delete</button></td>
+            </tr>
+            <tr>
+              <td>#</td>
+                <td class="naam">Pesamakini Backend UI <br> <small>Created 01.01.2005</small></td>
+                <td><i class="fa-solid fa-user"></i><i class="fa-solid fa-user"></i><i class="fa-solid fa-user"></i><i class="fa-solid fa-user"></i><i class="fa-solid fa-user"></i></td>
+                <td><div class="progress">
+                  <div class="progress-bar progress-bar-success bg-success" role="progressbar" aria-valuenow="40"
+                  aria-valuemin="0" aria-valuemax="100" style="width:70%">
+                  </div>
+                  </div>
+                  70% completed
+                  </td><td><button type="button" class="btn btn-success">Success</button></td>
+          <td><button type="button" class="btn btn-primary" style="width: 60px;">View</button>
+            <button type="button" class="btn btn-dark" style="width: 60px;">Edit</button>
+            <button type="button" class="btn btn-danger" style="width: 70px;">Delete</button></td>
+            </tr>
+            <tr>
+              <td>#</td>
+               <td class="naam">Pesamakini Backend UI <br> <small>Created 01.01.2005</small></td>
+               <td><i class="fa-solid fa-user"></i><i class="fa-solid fa-user"></i><i class="fa-solid fa-user"></i>
+                <td><div class="progress">
+                  <div class="progress-bar progress-bar-success bg-success" role="progressbar" aria-valuenow="40"
+                  aria-valuemin="0" aria-valuemax="100" style="width:40%">
+                  </div>
+                  </div>
+                  40% completed
+                  </td>
+                  <td><button type="button" class="btn btn-success">Success</button></td>
+          <td><button type="button" class="btn btn-primary" style="width: 60px;">View</button>
+            <button type="button" class="btn btn-dark" style="width: 60px;">Edit</button>
+            <button type="button" class="btn btn-danger" style="width: 70px;">Delete</button></td>
+            </tr>
+            <tr>
+              <td>#</td>
+              <td class="naam">Pesamakini Backend UI <br> <small>Created 01.01.2005</small></td>
+              <td><i class="fa-solid fa-user"></i><i class="fa-solid fa-user"></i><i class="fa-solid fa-user"></i></td>
+              <td><div class="progress">
+                <div class="progress-bar progress-bar-success bg-success" role="progressbar" aria-valuenow="40"
+                aria-valuemin="0" aria-valuemax="100" style="width:10%">
+                </div>
+                </div>
+                10% completed
+              </td>
+              <td><button type="button" class="btn btn-success">Success</button></td>
+          <td><button type="button" class="btn btn-primary" style="width: 60px;">View</button>
+            <button type="button" class="btn btn-dark" style="width: 60px;">Edit</button>
+            <button type="button" class="btn btn-danger" style="width: 70px;">Delete</button></td>
+            </tr>
+          </tbody>
+        </table>
+        
+    </div>
+    </div>
+<footer style="background-color:rgb(47, 47, 47); color:white; padding: 25px;" align="center">
+  Footer
+</footer>
+    
+    </div>
+
+  </body>
+  <script src="https://kit.fontawesome.com/9528b2e134.js" crossorigin="anonymous"></script>
+</html>
